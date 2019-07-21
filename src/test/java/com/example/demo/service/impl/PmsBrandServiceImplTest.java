@@ -22,4 +22,12 @@ public class PmsBrandServiceImplTest {
         List<PmsBrand> list = service.listAllBrand();
        list.stream().forEach(System.out::println);
     }
+
+    @Test
+    public void create() {
+        PmsBrand brand = new PmsBrand();
+        brand.setId(11L);
+        brand.setName("Mac Pro");
+        service.createBrand(brand);
+    }
 }
