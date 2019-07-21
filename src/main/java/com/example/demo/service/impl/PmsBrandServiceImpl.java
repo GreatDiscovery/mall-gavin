@@ -2,6 +2,7 @@ package com.example.demo.service.impl;
 
 import com.example.demo.mbg.mapper.PmsBrandMapper;
 import com.example.demo.mbg.model.PmsBrand;
+import com.example.demo.mbg.model.PmsBrandExample;
 import com.example.demo.service.PmsBrandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,8 +15,7 @@ public class PmsBrandServiceImpl implements PmsBrandService {
     private PmsBrandMapper brandMapper;
     @Override
     public List<PmsBrand> listAllBrand() {
-//        return brandMapper.selectByExample(new PmsBrandExample());
-        return null;
+        return brandMapper.selectByExample(new PmsBrandExample());
     }
 
     @Override

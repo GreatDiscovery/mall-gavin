@@ -1,11 +1,14 @@
 package com.example.demo.service.impl;
 
+import com.example.demo.mbg.model.PmsBrand;
 import com.example.demo.service.PmsBrandService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import java.util.List;
 
 
 @SpringBootTest
@@ -16,6 +19,7 @@ public class PmsBrandServiceImplTest {
 
     @Test
     public void listAll() {
-        service.listAllBrand();
+        List<PmsBrand> list = service.listAllBrand();
+       list.stream().forEach(System.out::println);
     }
 }

@@ -36,7 +36,7 @@ dependencies {
 //    <!--数据库连接池-->
     implementation 'com.alibaba:druid-spring-boot-starter:1.1.10'
 //    <!--MyBatis生成-->
-    implementation 'org.mybatis.generator:mybatis-generator-core:1.3.3'
+    implementation 'org.mybatis.generator:mybatis-generator-core:1.3.7'
     implementation 'mysql:mysql-connector-java:8.0.15'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
