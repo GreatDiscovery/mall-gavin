@@ -1,5 +1,6 @@
 package com.example.demo.service.impl;
 
+import com.example.demo.mbg.model.PmsBrand;
 import com.example.demo.service.PmsBrandService;
 import org.junit.Test;
 import org.junit.runner.RunWith;

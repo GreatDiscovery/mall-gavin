@@ -1,5 +1,6 @@
 package com.example.demo.service.impl;
 
+import com.example.demo.mbg.mapper.PmsBrandMapper;
 import com.example.demo.mbg.model.PmsBrand;
 import com.example.demo.mbg.model.PmsBrandExample;
 import com.example.demo.service.PmsBrandService;
