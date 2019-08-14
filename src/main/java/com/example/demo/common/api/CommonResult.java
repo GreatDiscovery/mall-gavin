@@ -41,4 +41,7 @@ public class CommonResult<T> {
     public static <T> CommonResult<T> success(T data) {
         return new CommonResult<>(ResultCode.SUCCESS.getCode(), ResultCode.SUCCESS.getMessage(), data);
     }
+    public static <T> CommonResult<T> failed(T data) {
+        return new CommonResult<>(ResultCode.FAILED.getCode(), ResultCode.FAILED.getMessage(), data);
+    }
 }
