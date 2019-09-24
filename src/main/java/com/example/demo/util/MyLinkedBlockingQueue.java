@@ -488,4 +488,16 @@ public class MyLinkedBlockingQueue<E> extends AbstractQueue<E> implements Blocki
             fullyUnlock();
         }
     }
+
+    private void readObject(ObjectInputStream s) throws IOException, ClassNotFoundException {
+        s.defaultReadObject();
+        count.set(0);
+        last = head = new Node<>(null);
+        for (;;) {
+            E item = (E) s.readObject();
+            if (item == null)
+                break;
+            add(item);
+        }
+    }
 }
